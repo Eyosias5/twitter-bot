@@ -15,7 +15,7 @@ const client = new Twitter({
 
 someQueue.process(async (job, done) => {
   console.log("job starting...");
-  console.log(job.data.link);
+
   await TweetFile(job.data.link);
 
   done();
